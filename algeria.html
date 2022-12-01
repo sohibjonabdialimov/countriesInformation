@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries</title>
+  <link rel="stylesheet" href="css/flexboxgrid.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <h3 class="header__logo">Where in the world?</h3>
+        <p id="dark">
+          <ion-icon name="moon-outline"></ion-icon> Dark Mode
+        </p>
+      </div>
+    </div>
+  </header>
+  <section class="country">
+    <div class="container">
+      <div class="back">
+        <a href="index.html">
+          <ion-icon name="arrow-back-outline"></ion-icon> Back
+        </a>
+      </div>
+      <div class="info">
+        <div class="row info__content">
+          <div class="info__img col-lg-6 col-xs-12 col-sm-12 col-md-6">
+            <img src="img/algeria-8.svg" alt="amerika">
+          </div>
+          <div class="info__description  col-lg-6 col-xs-12 col-sm-12 col-md-6">
+            <div class="country__name">
+              <h1>Algeria</h1>
+            </div>
+            <div class="country__information">
+              <div class="country__information__left">
+                <p>Native Name: <span>België</span></p>
+                <p>Population: <span>11,319,511</span></p>
+                <p>Region: <span>Europe</span></p>
+                <p>Sub Region: <span>Europe</span></p>
+                <p>Capital: <span>Brussels</span></p>
+              </div>
+              <div class="country__information__right">
+                <p>Top Level Domain: <span>.be</span></p>
+                <p>Currencies: <span>Euro</span></p>
+                <p>Languages: <span>Dutch, French, German</span></p>
+              </div>
+            </div>
+            <div class="countries__border">
+              <p>Border Countries:</p>
+              <div class="spans">
+                <span>France</span>
+                <span>Germany</span>
+                <span>Netherlands</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let body = document.querySelector("body");
+    let dark = document.querySelector("#dark");
+    dark.onclick = function () {
+      body.classList.toggle("darkMode");
+    }
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

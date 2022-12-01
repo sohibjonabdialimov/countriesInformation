@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries</title>
+  <link rel="stylesheet" href="css/flexboxgrid.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <h3 class="header__logo">Where in the world?</h3>
+        <p id="dark">
+          <ion-icon name="moon-outline"></ion-icon> Dark Mode
+        </p>
+      </div>
+    </div>
+  </header>
+  <section class="main">
+    <div class="container">
+      <form>
+        <div class="form__section">
+          <div class="search">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" placeholder="Search for a country…">
+          </div>
+          <div class="filter">
+            <select>
+              <option value="">Filter by Region</option>
+              <option value="">Africa</option>
+              <option value="">America</option>
+              <option value="">Asia</option>
+              <option value="">Europe</option>
+              <option value="">Oceania</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <div class="cards">
+        <div class="row">
+          <div class="card col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="main.html"><img src="img/germany.svg" alt="germany"></a>
+            <div class="card__content">
+              <h3>Germany</h3>
+              <p>Population: <span>81,770,900</span></p>
+              <p>Region: <span>Europe</span></p>
+              <p>Capital: <span>Berlin</span></p>
+            </div>
+          </div>
+          <div class="card col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="amerika.html"><img src="img/amerika-2.svg" alt="germany"></a>
+            <div class="card__content">
+              <h3>United States of America</h3>
+              <p>Population: <span>81,770,900</span></p>
+              <p>Region: <span>Europe</span></p>
+              <p>Capital: <span>Berlin</span></p>
+            </div>
+          </div>
+          <div class="card col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="brazil.html"><img src="img/brazil-3.svg" alt="germany"></a>
+            <div class="card__content">
+              <h3>Brazil</h3>
+              <p>Population: <span>81,770,900</span></p>
+              <p>Region: <span>Europe</span></p>
+              <p>Capital: <span>Berlin</span></p>
+            </div>
+          </div>
+          <div class="card col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="iceland.html"><img src="img/iceland-4.svg" alt="germany"></a>
+            <div class="card__content">
+              <h3>Iceland</h3>
+              <p>Population: <span>81,770,900</span></p>
+              <p>Region: <span>Europe</span></p>
+              <p>Capital: <span>Berlin</span></p>
+            </div>
+          </div>
+          <div class="card col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="afghanistan.html"><img src="img/afghanistan-5.svg" alt="germany"></a>
+            <div class="card__content">
+              <h3>Afghanistan</h3>
+              <p>Population: <span>81,770,900</span></p>
+              <p>Region: <span>Europe</span></p>
+              <p>Capital: <span>Berlin</span></p>
+            </div>
+          </div>
+          <div class="card col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="islands.html"><img src="img/islands-6.svg" alt="germany"></a>
+            <div class="card__content">
+              <h3>Åland Islands</h3>
+              <p>Population: <span>81,770,900</span></p>
+              <p>Region: <span>Europe</span></p>
+              <p>Capital: <span>Berlin</span></p>
+            </div>
+          </div>
+          <div class="card col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="albania.html"><img src="img/albania-7.svg" alt="germany"></a>
+            <div class="card__content">
+              <h3>Albania</h3>
+              <p>Population: <span>81,770,900</span></p>
+              <p>Region: <span>Europe</span></p>
+              <p>Capital: <span>Berlin</span></p>
+            </div>
+          </div>
+          <div class="card col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="algeria.html"><img src="img/algeria-8.svg" alt="germany"></a>
+            <div class="card__content">
+              <h3>Algeria</h3>
+              <p>Population: <span>81,770,900</span></p>
+              <p>Region: <span>Europe</span></p>
+              <p>Capital: <span>Berlin</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let body = document.querySelector("body");
+    let dark = document.querySelector("#dark");
+    dark.onclick = function () {
+      body.classList.toggle("darkMode");
+    }
+  </script>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
